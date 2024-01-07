@@ -12,7 +12,6 @@ let
   }) {};
 in
 
-
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -155,6 +154,8 @@ in
    # nvidia_x11
    # nvidia_x11.extraPackages.libglvnd
     discord
+   # nixos-conf-editor
+   inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
